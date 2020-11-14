@@ -31,7 +31,7 @@ export declare enum VpnType {
     IKEV2_EAP_TLS = "ikev2-eap-tls",
     IKEV2_BYOD_EAP = "ikev2-byod-eap"
 }
-export declare const connect: (name: string, address: string, username: string, password: string, vpnType?: VpnType, secret: string, disconnectOnSleep: boolean, mtu?: number, b64CaCert?: string, b64UserCert?: string, userCertPassword?: string, certAlias?: string) => Promise<void>;
+export declare const connect: (name: string, address: string, username: string, password: string, vpnType?: VpnType, secret?: string, disconnectOnSleep?: boolean, mtu?: number, b64CaCert?: string, b64UserCert?: string, userCertPassword?: string, certAlias?: string) => Promise<void>;
 export declare const getCurrentState: () => Promise<VpnState>;
 export declare const getCharonErrorState: () => Promise<CharonErrorState>;
 export declare const disconnect: () => Promise<void>;

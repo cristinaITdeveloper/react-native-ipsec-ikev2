@@ -68,18 +68,20 @@ export enum VpnType {
 // use given credentials to connect VPN (ikev2-eap).
 // this will create a background VPN service.
 // mtu is only available on android.
-export const connect: (name: string, address: string, username: string, password: string, vpnType?: VpnType, mtu?: number, b64CaCert?: string, b64UserCert?: string, userCertPassword?: string, certAlias?: string) => Promise<void> = (
+export const connect: (name: string, address: string, username: string, password: string, vpnType?: VpnType, secret?: string, disconnectOnSleep?: boolean, mtu?: number, b64CaCert?: string, b64UserCert?: string, userCertPassword?: string, certAlias?: string) => Promise<void> = (
   name,
   address,
   username,
   password,
   vpnType,
+  secret,
+  disconnectOnSleep,
   mtu,
   b64CaCert,
   b64UserCert,
   certAlias,
   userCertPassword,
-) => NativeModules.RNIpSecVpn.connect(name || "", address || "", username || "", password || "", vpnType || "", mtu || 1400, b64CaCert || "", b64UserCert || "", userCertPassword || "", certAlias || "");
+) => NativeModules.RNIpSecVpn.connect(name || "", address || "", username || "", password || "", vpnType || "", secret || "", disconnectOnSleep || false, mtu || 1400, b64CaCert || "", b64UserCert || "", userCertPassword || "", certAlias || "");
 
 // get current state
 export const getCurrentState: () => Promise<VpnState> = NativeModules.RNIpSecVpn.getCurrentState;
