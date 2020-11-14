@@ -1,8 +1,8 @@
 {
-  "name": "react-native-ipsec-ikev2",
-  "title": "React Native Ip Sec Vpn",
+  "name": "react-native-ikev2-ipsec",
+  "title": "React Native IPSec IKEV2 Vpn",
   "version": "1.1.11",
-  "description": "React Native IPSec VPN Module",
+  "description": "React Native IPSec IKEV2 Vpn Module",
   "homepage": "https://github.com/cristinaITdeveloper/react-native-ipsec-ikev2.git#readme",
   "main": "index.js",
   "types": "index.d.ts",

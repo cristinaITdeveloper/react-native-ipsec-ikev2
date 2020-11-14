@@ -8,7 +8,7 @@ import {
   getCurrentState,
   onStateChangedListener,
   prepare,
-} from 'react-native-ipsec-ikev2';
+} from 'react-native-ikev2-ipsec';
 import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar, TextInput, Button } from 'react-native';
 
 import { Header, Colors } from 'react-native/Libraries/NewAppScreen';

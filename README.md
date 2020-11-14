@@ -1,18 +1,18 @@
-# react-native-ipsec-ikev2
+# react-native-ikev2-ipsec
 
 ## Getting started
 
 Plugin can be installed using npm<br>
 With yarn:<br>
-`$ yarn add react-native-ipsec-ikev2 --save`<br>
+`$ yarn add react-native-ikev2-ipsec --save`<br>
 Or with npm:<br>
-`$ npm install react-native-ipsec-ikev2 --save`<br>
+`$ npm install react-native-ikev2-ipsec --save`<br>
 
 ### Mostly automatic installation
 
 on react native >60 no need to do anything but for manualing installation run the code below
 
-`$ react-native link react-native-ipsec-ikev2`
+`$ react-native link react-native-ikev2-ipsec`
 
 ## Example
 
@@ -29,7 +29,7 @@ npx react-native run-android
 ## Usage
 
 ```javascript
-import { prepare, connect } from "react-native-ipsec-ikev2";
+import { prepare, connect } from "react-native-ikev2-ipsec";
 ...
 useEffect(() => {
 	prepare();
