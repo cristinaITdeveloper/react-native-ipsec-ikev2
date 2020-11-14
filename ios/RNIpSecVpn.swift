@@ -96,7 +96,7 @@ class RNIpSecVpn: RCTEventEmitter {
     }
     
     @objc
-    func connect(_ address: NSString, username: NSString, password: NSString, vpnType: NSString, secret: NSString, disconnectOnSleep: Bool, mtu: NSNumber, findEventsWithResolver: @escaping RCTPromiseResolveBlock, rejecter: @escaping RCTPromiseRejectBlock) -> Void {
+    func connect(_ name: NSString, address: NSString, username: NSString, password: NSString, vpnType: NSString, secret: NSString, disconnectOnSleep: Bool, mtu: NSNumber, findEventsWithResolver: @escaping RCTPromiseResolveBlock, rejecter: @escaping RCTPromiseRejectBlock) -> Void {
         let vpnManager = NEVPNManager.shared()
         let kcs = KeychainService()
 
