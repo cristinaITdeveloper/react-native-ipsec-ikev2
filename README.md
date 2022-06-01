@@ -1,5 +1,8 @@
 # react-native-ikev2-ipsec
 
+## Warning
+This project is only a test. It doesn't work.
+
 ## Getting started
 
 Plugin can be installed using npm<br>
